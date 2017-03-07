@@ -3,6 +3,7 @@ package com.ittx.car.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.ittx.car.dao.SecureDao;
 import com.ittx.car.dao.UserDao;
@@ -12,6 +13,7 @@ import com.ittx.car.model.Role;
 import com.ittx.car.model.User;
 import com.ittx.car.service.SecureService;
 
+@Service("secureService")
 public class SecureServiceImpl implements SecureService {
     @Autowired
 	private UserDao userDao;

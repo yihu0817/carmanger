@@ -45,7 +45,6 @@ public class SecureDaoImpl extends MyHibernateDaoSupport implements SecureDao {
 	@Override
 	public void addRole(Role role) {
 		getHibernateTemplate().save(role);
-
 	}
 
 	@Override
@@ -65,7 +64,6 @@ public class SecureDaoImpl extends MyHibernateDaoSupport implements SecureDao {
 
 	@Override
 	public List<Function> getFunction(int moduleId) {
-
 		 Module module = getHibernateTemplate().get(Module.class, moduleId);
 		 Set<Function> sets =  module.getFunctionLists();
 		 return Utils.setToList(sets);
