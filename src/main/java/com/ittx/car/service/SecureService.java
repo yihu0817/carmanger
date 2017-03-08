@@ -15,11 +15,13 @@ public interface SecureService {
 	void addModule(Module module);
 	List<Module> getAllModule(); 
 	Module getModuleById(int id);
+	void deleteModule(int id);
 	
 	//==========function===============
 	void addFunction(Function function);
 	List<Function> getAllFunction();
 	List<Function> getFunction(int moduleId);
+	Function getFunctionById(int id);
 	
 	//===========role===============
 	void addRole(Role role);

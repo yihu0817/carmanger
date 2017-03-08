@@ -67,7 +67,7 @@
 		<ul style="display: block">
 			<li><a href="module/listmodule.do" target="right"><span
 					class="icon-caret-right"></span>模块管理</a></li>
-			<li><a href="user_show.do" target="right"><span
+			<li><a href="role/listrole.do" target="right"><span
 					class="icon-caret-right"></span>角色管理</a></li>
 
 		</ul>

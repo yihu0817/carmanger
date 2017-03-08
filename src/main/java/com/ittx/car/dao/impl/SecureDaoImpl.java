@@ -69,4 +69,16 @@ public class SecureDaoImpl extends MyHibernateDaoSupport implements SecureDao {
 		 return Utils.setToList(sets);
 	}
 
+	@Override
+	public void deleteModule(Module module) {
+		getHibernateTemplate().delete(module);
+		
+	}
+
+	@Override
+	public Function getFunctionById(int id) {
+		// TODO Auto-generated method stub
+		return getHibernateTemplate().get(Function.class, id);
+	}
+
 }

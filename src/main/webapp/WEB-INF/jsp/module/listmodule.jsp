@@ -54,18 +54,18 @@ function _delete(url,msg)
 					}
 			%>
 			<tr>
-				<td bgcolor="#FFFFFF" style="word-break: break-all;"><div
+				<td bgcolor="<%=color %>" style="word-break: break-all;"><div
 						align="center">${x.name}</div></td>
-				<td bgcolor="#FFFFFF" style="word-break: break-all;">${x.description}</td>
-				<td bgcolor="#FFFFFF"><div align="center">
+				<td bgcolor="<%=color %>" style="word-break: break-all;">${x.description}</td>
+				<td bgcolor="<%=color %>"><div align="center">
 						<a
 							href="javascript:void _delete('deletemodules.do?id=${x.mId}','模块')">删除</a>
 					</div></td>
-				<td bgcolor="#FFFFFF"><div align="center">
+				<td bgcolor="<%=color %>"><div align="center">
 						<a href="modifymodule.jspa?id=${x.mId}">修改</a>
 					</div></td>
-				<td bgcolor="#FFFFFF"><div align="center">
-						<a href="listmodulefunction.do?moduleid=${x.mId}">模块功能管理</a>
+				<td bgcolor="<%=color %>"><div align="center">
+						<a href="<%=contextPath %>/function/listfunction.do?moduleid=${x.mId}">模块功能管理</a>
 					</div></td>
 			</tr>
 		</c:forEach>

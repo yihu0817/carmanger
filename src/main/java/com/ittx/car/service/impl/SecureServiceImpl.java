@@ -122,4 +122,17 @@ public class SecureServiceImpl implements SecureService {
 			userDao.updateUser(user);
 		}
 	}
+
+	@Override
+	public void deleteModule(int id) {
+		Module module = secureDao.getModuleById(id);
+		secureDao.deleteModule(module);
+		
+	}
+
+	@Override
+	public Function getFunctionById(int id) {
+		// TODO Auto-generated method stub
+		return secureDao.getFunctionById(id);
+	}
 }
