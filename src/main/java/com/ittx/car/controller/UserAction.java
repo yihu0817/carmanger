@@ -1,5 +1,8 @@
 package com.ittx.car.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,12 +22,16 @@ public class UserAction {
 	}
 	
 	@RequestMapping(value="login_submit")
-	public String loginSubmit(User user ,Model model){
-		if(secureService.login(user) == null){
+	public String loginSubmit(HttpServletRequest request,User user ,Model model){
+		User u = secureService.login(user);
+		if(u == null){
 			model.addAttribute("error", "用户名密码不正确或审核未通过！");
 			return "login";
+		}else{
+			HttpSession session = request.getSession();
+			session.setAttribute("userId", u.getId());
+			return "main";
 		}
-		return "main";
 	}
 	
 }

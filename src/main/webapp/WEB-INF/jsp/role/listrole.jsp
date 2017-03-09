@@ -12,7 +12,7 @@
 <body>
 	<h3>权限管理 &gt; 角色管理 &gt; 浏览角色</h3>
 	<p>
-		[<a href="role.jspa">添加角色</a>]
+		[<a href="<%=contextPath %>/role/addrole.do">添加角色</a>]
 	</p>
 	<table width="100%%" border="0" cellpadding="2" cellspacing="2"
 		bgcolor="#cccccc">

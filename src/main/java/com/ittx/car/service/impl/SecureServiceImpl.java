@@ -7,10 +7,12 @@ import org.springframework.stereotype.Service;
 
 import com.ittx.car.dao.SecureDao;
 import com.ittx.car.dao.UserDao;
+import com.ittx.car.dao.VehicleDao;
 import com.ittx.car.model.Function;
 import com.ittx.car.model.Module;
 import com.ittx.car.model.Role;
 import com.ittx.car.model.User;
+import com.ittx.car.model.Vehicle;
 import com.ittx.car.service.SecureService;
 
 @Service("secureService")
@@ -19,6 +21,8 @@ public class SecureServiceImpl implements SecureService {
 	private UserDao userDao;
     @Autowired
     private SecureDao secureDao;
+    @Autowired
+    private VehicleDao vehicleDao;
     /**
      * 注册用户
      * 判断用户是否存在 
@@ -134,5 +138,11 @@ public class SecureServiceImpl implements SecureService {
 	public Function getFunctionById(int id) {
 		// TODO Auto-generated method stub
 		return secureDao.getFunctionById(id);
+	}
+
+	@Override
+	public List<Vehicle> getAllVehicleList() {
+		// TODO Auto-generated method stub
+		return vehicleDao.getAllVehicleList();
 	}
 }

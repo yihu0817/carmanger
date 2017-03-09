@@ -52,6 +52,7 @@
 				<value>com/ittx/car/model/Module.hbm.xml</value>
 				<value>com/ittx/car/model/Function.hbm.xml</value>
 				<value>com/ittx/car/model/Role.hbm.xml</value>
+				<value>com/ittx/car/model/Vehicle.hbm.xml</value>
 			</list>
 		</property>
 		<property name="hibernateProperties">

@@ -6,6 +6,7 @@ import com.ittx.car.model.Function;
 import com.ittx.car.model.Module;
 import com.ittx.car.model.Role;
 import com.ittx.car.model.User;
+import com.ittx.car.model.Vehicle;
 
 public interface SecureService {
 	boolean registerUser(User user);//注册
@@ -28,4 +29,7 @@ public interface SecureService {
 	List<Role> getAllRoles();
 	Role getRoleById(int id);
 	void updateRole(Role role);
+	
+	//========================
+	List<Vehicle> getAllVehicleList();
 }

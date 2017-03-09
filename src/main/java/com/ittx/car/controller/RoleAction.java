@@ -20,6 +20,18 @@ import com.ittx.car.utils.Utils;
 public class RoleAction {
 	@Autowired
 	private SecureService secureService;
+	
+	@RequestMapping(value = "addrole")
+	public String addRole(){
+		return "role/addrole";
+	}
+	
+	@RequestMapping(value = "rolesubmit")
+	public String addRoleSubmit(Role role){
+		secureService.addRole(role);
+		return "redirect:/role/listrole.do";
+	}
+	
 	//role/listrole.do
 	@RequestMapping(value = "listrole")
 	public String listRole(Map<String, List<Role>> map,Model model) {

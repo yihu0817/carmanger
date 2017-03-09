@@ -67,6 +67,7 @@
 						for (Function f : lists) {
 							if (f.getfId() == function.getfId()) {
 								z = 1;
+								break;
 							}
 						}
 					%>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-1-18 16:37:31 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ittx.car.model.Vehicle" table="vehicle">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="vehicleNumber" type="java.lang.String">
+            <column name="vehicleNumber" />
+        </property>
+        <property name="productFactor" type="java.lang.String">
+            <column name="productFactor" />
+        </property>
+        <property name="vehicleType" type="java.lang.String">
+            <column name="vehicleType" />
+        </property>
+        <property name="vehicleColor" type="java.lang.String">
+            <column name="vehicleColor" />
+        </property>
+        <property name="vehicleImg" type="java.lang.String">
+            <column name="vehicleImg" />
+        </property>
+        <property name="engineNumber" type="java.lang.String">
+            <column name="engineNumber" />
+        </property>
+        <property name="vehicleHost" type="java.lang.String">
+            <column name="vehicleHost" />
+        </property>
+        <property name="telephone" type="java.lang.String">
+            <column name="telephone" />
+        </property>
+        <property name="hostType" type="java.lang.String">
+            <column name="hostType" />
+        </property>
+        <property name="remark" type="java.lang.String">
+            <column name="remark" />
+        </property>
+        <property name="createTime" type="java.util.Date">
+            <column name="createDate" />
+        </property>
+    </class>
+</hibernate-mapping>

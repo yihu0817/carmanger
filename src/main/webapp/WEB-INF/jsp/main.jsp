@@ -42,9 +42,9 @@
 			<span class="icon-user"></span>基本设置
 		</h2>
 		<ul style="display: block">
-			<li><a href="jsp/user/add_user.jsp" target="right"><span
+			<li><a href="user/adduser.do" target="right"><span
 					class="icon-caret-right"></span>添加用户</a></li>
-			<li><a href="user_show.do" target="right"><span
+			<li><a href="user/listuser.do" target="right"><span
 					class="icon-caret-right"></span>用户列表</a></li>
 
 		</ul>
@@ -53,9 +53,9 @@
 			<span class="icon-pencil-square-o"></span>车辆管理
 		</h2>
 		<ul>
-			<li><a href="vehicle_show.do" target="right"><span
+			<li><a href="vehicle/listvehicle.do" target="right"><span
 					class="icon-caret-right"></span>车辆列表</a></li>
-			<li><a href="jsp/vehicle/vehicle_add.jsp" target="right"><span
+			<li><a href="vehicle/addvehicle.do" target="right"><span
 					class="icon-caret-right"></span>添加车辆</a></li>
 
 		</ul>
