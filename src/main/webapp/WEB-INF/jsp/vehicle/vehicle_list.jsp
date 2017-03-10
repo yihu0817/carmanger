@@ -62,7 +62,7 @@
 								src="${pageContext.request.contextPath}${vehicle.vehicleImg}"
 								width="60px" height="60px" /></a>
 						</c:if></td>
-					<td>${vehicle.vehicleNumber}</td>
+                    <td>${vehicle.vehicleNumber}</td>
 					<td>${vehicle.productFactor}</td>
 					<td>${vehicle.vehicleType}</td>
 					<td>${vehicle.vehicleColor}</td>

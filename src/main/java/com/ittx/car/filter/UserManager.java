@@ -9,6 +9,7 @@ import com.ittx.car.dao.UserDao;
 import com.ittx.car.model.Function;
 import com.ittx.car.model.Role;
 import com.ittx.car.model.User;
+import com.ittx.car.utils.WebApplication;
 
 public class UserManager  {
 	private static UserDao userDao;
@@ -29,7 +30,6 @@ public class UserManager  {
 		
 		Set<Function> functionLists = role.getFunctionLists();
 		for(Function fuction : functionLists){
-			System.out.println("code :"+fuction.getCode());
 			if(fuction.getCode().equals(action)){
 				results = true;
 				break;
@@ -39,8 +39,11 @@ public class UserManager  {
 		return results;
 	}
 	public static void initUserManager(){
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-hibernate.xml");
-		userDao = (UserDao) ctx.getBean("userDao");
+//		ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-hibernate.xml");
+//		userDao = (UserDao) ctx.getBean("userDao");
+		
+//		userDao = (UserDao) WebApplication.getBean("userDao");
+		userDao = WebApplication.getBean(UserDao.class);
 	}
 
 }

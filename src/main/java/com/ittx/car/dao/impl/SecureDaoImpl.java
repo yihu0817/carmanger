@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.ittx.car.dao.SecureDao;
 import com.ittx.car.model.Function;
@@ -14,7 +13,6 @@ import com.ittx.car.utils.MyHibernateDaoSupport;
 import com.ittx.car.utils.Utils;
 
 @Repository("secureDao")
-@Transactional
 public class SecureDaoImpl extends MyHibernateDaoSupport implements SecureDao {
 
 	@Override

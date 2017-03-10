@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.ittx.car.dao.SecureDao;
 import com.ittx.car.dao.UserDao;
@@ -16,6 +17,7 @@ import com.ittx.car.model.Vehicle;
 import com.ittx.car.service.SecureService;
 
 @Service("secureService")
+@Transactional
 public class SecureServiceImpl implements SecureService {
     @Autowired
 	private UserDao userDao;
