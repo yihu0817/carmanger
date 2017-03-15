@@ -65,7 +65,8 @@ function _delete(url,msg)
 						<a href="modifymodule.jspa?id=${x.mId}">修改</a>
 					</div></td>
 				<td bgcolor="<%=color %>"><div align="center">
-						<a href="<%=contextPath %>/function/listfunction.do?moduleid=${x.mId}">模块功能管理</a>
+						<%-- <a href="<%=contextPath %>/function/listfunction.do?moduleid=${x.mId}">模块功能管理</a> --%>
+						<a href="<%=contextPath %>/function/listfunction.do?module_json={'mId':${x.mId},'name':${x.name}}">模块功能管理</a>
 					</div></td>
 			</tr>
 		</c:forEach>

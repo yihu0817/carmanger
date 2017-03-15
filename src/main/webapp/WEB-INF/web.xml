@@ -33,7 +33,7 @@
 	</filter-mapping>
 	
 	<!-- 权限过虑 -->
-	 <filter>
+	 <!-- <filter>
 	  <filter-name>signonFilter</filter-name>
       <filter-class>com.ittx.car.filter.SignOnFilter</filter-class>
 	 <init-param>
@@ -45,7 +45,7 @@
     <filter-mapping>
 	  	<filter-name>signonFilter</filter-name>
 	   	<url-pattern>*.do</url-pattern>
-    </filter-mapping>
+    </filter-mapping> -->
 	
 	
 	<servlet>
@@ -65,6 +65,6 @@
 	</servlet-mapping>
 	
 	<welcome-file-list>
-		<welcome-file>login.do</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 </web-app>
